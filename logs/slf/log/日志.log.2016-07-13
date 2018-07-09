@@ -1,0 +1,968 @@
+16:15:30,511  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:15:30,542  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5abca1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2286778, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e9ba398, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6d7b4f4c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@527740a2]
+16:15:30,667  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:15:30,980  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:15:31,042  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@9660f4e: startup date [Wed Jul 13 16:15:31 CST 2016]; root of context hierarchy
+16:15:31,222  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:15:31,238  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:15:31,347  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+16:15:31,518  INFO main log.MLog:92 - MLog clients using log4j logging.
+16:15:31,830  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+16:15:32,050  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+16:15:32,050  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+16:15:32,050  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+16:15:32,065  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+16:15:32,221  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:15:32,237  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+16:15:32,440  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+16:15:32,455  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+16:15:32,708  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+16:15:33,104  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+16:15:33,104  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+16:15:33,137  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r2orfx8cdgdu|533bda92, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r2orfx8cdgdu|533bda92, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+16:15:33,556  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+16:15:33,603  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+16:15:33,603  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+16:15:33,603  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+16:15:33,603  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+16:15:33,619  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+16:15:33,619  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+16:15:33,619  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+16:15:33,619  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+16:15:33,619  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+16:15:33,619  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+16:15:33,619  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+16:15:33,619  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+16:15:33,634  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+16:15:33,634  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+16:15:33,634  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+16:15:33,634  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:15:33,650  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+16:15:33,650  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+16:15:33,650  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+16:15:33,650  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:15:33,665  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+16:15:33,665  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+16:15:33,665  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+16:15:33,665  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:15:33,665  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+16:15:33,775  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r2orfx8cdgdu|533bda92, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r2orfx8cdgdu|533bda92, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+16:15:33,790 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2286778] to prepare test instance [com.slf.wx.test.TestHttpKit@6b587673]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.slf.wx.test.TestHttpKit': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'httpClient' is defined
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'httpClient' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:687)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:281)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 32 more
+16:15:33,993  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:15:33,993  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62b969c4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@dcc6211, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47ec7422, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48535004, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@610df783]
+16:15:34,139  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:15:34,139  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4038cd3a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@14ac77b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f4cd155, org.springframework.test.context.transaction.TransactionalTestExecutionListener@563a89b5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@506dcf55]
+16:15:34,205  INFO main service.UserServiceImpl:108 - 时间：Wed Jul 13 16:15:34 CST 2016 添加收货地址成功
+16:15:34,429  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@9660f4e: startup date [Wed Jul 13 16:15:31 CST 2016]; root of context hierarchy
+16:19:42,207  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:19:42,240  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5abca1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2286778, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e9ba398, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6d7b4f4c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@527740a2]
+16:19:42,349  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:19:42,661  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:19:42,737  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@9660f4e: startup date [Wed Jul 13 16:19:42 CST 2016]; root of context hierarchy
+16:19:42,898  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:19:42,929  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:19:43,039  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+16:19:43,195  INFO main log.MLog:92 - MLog clients using log4j logging.
+16:19:43,526  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+16:19:43,728  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+16:19:43,744  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+16:19:43,744  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+16:19:43,744  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+16:19:43,918  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:19:43,925  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+16:19:44,128  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+16:19:44,128  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+16:19:44,391  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+16:19:44,797  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+16:19:44,797  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+16:19:44,828  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r2u5n11oasvjm|533bda92, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r2u5n11oasvjm|533bda92, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+16:19:45,209  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+16:19:45,257  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+16:19:45,257  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+16:19:45,257  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+16:19:45,257  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+16:19:45,273  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+16:19:45,273  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+16:19:45,273  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+16:19:45,273  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+16:19:45,273  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+16:19:45,288  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+16:19:45,288  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+16:19:45,288  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+16:19:45,288  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+16:19:45,288  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+16:19:45,288  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+16:19:45,288  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:19:45,304  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+16:19:45,304  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+16:19:45,304  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+16:19:45,304  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:19:45,320  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+16:19:45,320  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+16:19:45,320  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+16:19:45,320  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:19:45,320  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+16:19:45,405  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r2u5n11oasvjm|533bda92, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r2u5n11oasvjm|533bda92, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+16:19:45,421 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2286778] to prepare test instance [com.slf.wx.test.TestHttpKit@6b587673]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.slf.wx.test.TestHttpKit': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'httpClient' is defined
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'httpClient' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:687)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:281)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 32 more
+16:19:45,655  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:19:45,655  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62b969c4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@dcc6211, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47ec7422, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48535004, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@610df783]
+16:19:45,795  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:19:45,795  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4038cd3a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@14ac77b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f4cd155, org.springframework.test.context.transaction.TransactionalTestExecutionListener@563a89b5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@506dcf55]
+16:19:45,875  INFO main service.UserServiceImpl:108 - 时间：Wed Jul 13 16:19:45 CST 2016 添加收货地址成功
+16:19:46,109  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@9660f4e: startup date [Wed Jul 13 16:19:42 CST 2016]; root of context hierarchy
+16:34:17,582  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:34:17,613  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+16:34:17,753  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:34:18,050  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:34:18,113  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:34:18 CST 2016]; root of context hierarchy
+16:34:18,298  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:34:18,313  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:34:18,454  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+16:34:18,625  INFO main log.MLog:92 - MLog clients using log4j logging.
+16:34:18,922  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+16:34:19,140  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+16:34:19,140  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+16:34:19,140  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+16:34:19,156  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+16:34:19,317  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:34:19,332  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+16:34:19,535  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+16:34:19,535  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+16:34:19,800  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+16:34:20,221  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+16:34:20,221  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+16:34:20,253  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r3cx4g1l20lik|750e2b97, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r3cx4g1l20lik|750e2b97, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+16:34:20,675  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+16:34:20,722  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+16:34:20,722  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+16:34:20,722  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+16:34:20,722  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+16:34:20,737  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+16:34:20,737  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+16:34:20,737  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+16:34:20,737  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+16:34:20,753  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+16:34:20,753  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+16:34:20,753  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+16:34:20,753  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+16:34:20,768  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+16:34:20,768  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+16:34:20,768  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+16:34:20,768  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:34:20,784  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+16:34:20,784  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+16:34:20,784  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+16:34:20,784  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:34:20,784  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+16:34:20,800  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+16:34:20,800  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+16:34:20,800  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+16:34:20,800  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+16:34:20,893  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r3cx4g1l20lik|750e2b97, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r3cx4g1l20lik|750e2b97, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+16:34:20,924 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d] to prepare test instance [com.slf.wx.test.TestHttpKit@53dfacba]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.slf.wx.test.TestHttpKit': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'httpClient' is defined
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'httpClient' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:687)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:281)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 26 more
+16:34:20,940  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:34:18 CST 2016]; root of context hierarchy
+16:36:42,686  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:36:42,733  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+16:36:42,873  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:36:43,185  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:36:43,264  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:36:43 CST 2016]; root of context hierarchy
+16:36:43,530  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:36:43,545  WARN main support.GenericApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:36:43,545 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d] to prepare test instance [com.slf.wx.test.TestHttpKit@198b6731]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:39:08,088  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:39:08,119  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+16:39:08,275  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:39:08,574  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:39:08,653  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:39:08 CST 2016]; root of context hierarchy
+16:39:08,887  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:39:08,887  WARN main support.GenericApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:39:08,902 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d] to prepare test instance [com.slf.wx.test.TestHttpKit@74e52ef6]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:43:41,723  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:43:41,761  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+16:43:41,890  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:43:42,206  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:43:42,295  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:43:42 CST 2016]; root of context hierarchy
+16:43:42,523  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:43:42,533  WARN main support.GenericApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:43:42,537 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d] to prepare test instance [com.slf.wx.test.TestHttpKit@74e52ef6]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:48:14,193  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:48:14,225  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+16:48:14,350  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:48:14,694  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:48:14,742  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+16:48:14,789  INFO main support.DefaultListableBeanFactory:822 - Overriding bean definition for bean 'httpClientConnectionManager': replacing [Generic bean: class [org.apache.http.impl.conn.PoolingHttpClientConnectionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [http-client.xml]] with [Generic bean: class [org.apache.http.impl.conn.PoolingHttpClientConnectionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [applicationContext.xml]]
+16:48:14,789  INFO main support.DefaultListableBeanFactory:822 - Overriding bean definition for bean 'httpClientBuilder': replacing [Generic bean: class [org.apache.http.impl.client.HttpClientBuilder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=create; initMethodName=null; destroyMethodName=null; defined in class path resource [http-client.xml]] with [Generic bean: class [org.apache.http.impl.client.HttpClientBuilder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=create; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext.xml]]
+16:48:14,789  INFO main support.DefaultListableBeanFactory:822 - Overriding bean definition for bean 'httpClient': replacing [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=httpClientBuilder; factoryMethodName=build; initMethodName=null; destroyMethodName=null; defined in class path resource [http-client.xml]] with [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=httpClientBuilder; factoryMethodName=build; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext.xml]]
+16:48:14,789  INFO main support.DefaultListableBeanFactory:822 - Overriding bean definition for bean 'requestConfigBuilder': replacing [Generic bean: class [org.apache.http.client.config.RequestConfig.Builder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [http-client.xml]] with [Generic bean: class [org.apache.http.client.config.RequestConfig.Builder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext.xml]]
+16:48:14,789  INFO main support.DefaultListableBeanFactory:822 - Overriding bean definition for bean 'requestConfig': replacing [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=requestConfigBuilder; factoryMethodName=build; initMethodName=null; destroyMethodName=null; defined in class path resource [http-client.xml]] with [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=requestConfigBuilder; factoryMethodName=build; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext.xml]]
+16:48:14,789  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:48:14 CST 2016]; root of context hierarchy
+16:48:15,008  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:48:15,023  WARN main support.GenericApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:48:15,023 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d] to prepare test instance [com.slf.wx.test.TestHttpKit@367ffa75]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:56:00,877  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:56:00,924  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+16:56:01,049  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+16:56:01,377  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+16:56:01,409  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+16:56:01,456  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 16:56:01 CST 2016]; root of context hierarchy
+16:56:01,690  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+16:56:01,690  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+16:56:01,690  WARN main support.GenericApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [http-client.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:222)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:86)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:258)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+16:56:01,690 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d] to prepare test instance [com.slf.wx.test.TestHttpKit@1fa121e2]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'httpClientConnectionManager' defined in class path resource [http-client.xml]: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:222)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:86)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'http.pool.maxTotal' in string value "${http.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:258)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+17:01:39,066  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:01:39,110  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+17:01:39,250  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+17:01:39,599  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+17:01:39,636  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+17:01:39,683  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 17:01:39 CST 2016]; root of context hierarchy
+17:01:39,951  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+17:01:39,952  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+17:01:39,966  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:01:40,101  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+17:01:40,277  INFO main log.MLog:92 - MLog clients using log4j logging.
+17:01:40,576  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+17:01:40,785  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:01:40,793  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+17:01:40,796  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+17:01:40,798  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+17:01:40,963  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:01:40,974  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+17:01:41,182  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17:01:41,188  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+17:01:41,481  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+17:01:41,894  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+17:01:41,895  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+17:01:41,935  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r4c3twrt90wy|4c60d6e9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r4c3twrt90wy|4c60d6e9, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+17:01:42,346  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+17:01:42,385  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+17:01:42,385  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+17:01:42,386  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+17:01:42,387  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+17:01:42,396  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+17:01:42,397  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+17:01:42,398  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+17:01:42,399  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+17:01:42,409  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+17:01:42,410  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+17:01:42,410  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+17:01:42,411  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+17:01:42,419  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+17:01:42,420  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+17:01:42,420  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+17:01:42,421  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+17:01:42,430  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+17:01:42,431  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+17:01:42,431  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+17:01:42,432  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+17:01:42,439  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+17:01:42,440  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+17:01:42,440  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+17:01:42,441  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+17:01:42,443  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+17:01:42,786  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r4c3twrt90wy|4c60d6e9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r4c3twrt90wy|4c60d6e9, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+17:01:42,914  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 17:01:39 CST 2016]; root of context hierarchy
+17:02:26,346  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:02:26,384  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36d4b5c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d00a15d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51efea79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5034c75a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@396a51ab]
+17:02:26,514  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+17:02:26,826  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+17:02:26,856  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+17:02:26,898  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 17:02:26 CST 2016]; root of context hierarchy
+17:02:27,162  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+17:02:27,163  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+17:02:27,173  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:02:27,286  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+17:02:27,456  INFO main log.MLog:92 - MLog clients using log4j logging.
+17:02:27,756  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+17:02:27,966  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:02:27,974  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+17:02:27,977  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+17:02:27,979  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+17:02:28,144  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:02:28,154  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+17:02:28,363  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17:02:28,369  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+17:02:28,677  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+17:02:29,074  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+17:02:29,075  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+17:02:29,109  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r4d48gpt1a00|4c60d6e9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r4d48gpt1a00|4c60d6e9, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+17:02:29,530  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+17:02:29,569  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+17:02:29,569  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+17:02:29,570  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+17:02:29,571  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+17:02:29,581  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+17:02:29,582  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+17:02:29,583  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+17:02:29,583  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+17:02:29,592  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+17:02:29,593  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+17:02:29,593  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+17:02:29,594  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+17:02:29,602  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+17:02:29,602  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+17:02:29,603  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+17:02:29,604  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+17:02:29,612  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+17:02:29,613  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+17:02:29,614  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+17:02:29,614  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+17:02:29,622  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+17:02:29,623  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+17:02:29,624  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+17:02:29,624  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+17:02:29,626  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+17:02:29,970  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9h1r4d48gpt1a00|4c60d6e9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9h1r4d48gpt1a00|4c60d6e9, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+17:02:32,061  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@1a968a59: startup date [Wed Jul 13 17:02:26 CST 2016]; root of context hierarchy

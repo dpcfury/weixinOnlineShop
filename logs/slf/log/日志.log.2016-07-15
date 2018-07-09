@@ -1,0 +1,540 @@
+10:42:10,991  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:42:11,033  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:42:11,183  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:42:11,576  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:42:11,607  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:42:11,652  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:42:11 CST 2016]; root of context hierarchy
+10:42:11,906  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:42:11,907  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:42:11,918  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:42:12,044  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:42:12,239  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:42:12,595  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:42:12,838  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:42:12,848  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:42:12,851  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:42:12,854  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:42:13,057  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:42:13,069  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:42:13,285  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:42:13,294  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:42:13,618  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:42:14,050  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:42:14,051  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:42:14,085  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlnt8k1p6zaqw|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlnt8k1p6zaqw|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:42:14,539  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:42:14,581  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:42:14,582  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:42:14,583  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:42:14,583  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:42:14,595  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:42:14,596  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:42:14,596  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:42:14,597  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:42:14,607  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:42:14,607  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:42:14,608  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:42:14,608  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:42:14,616  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:42:14,617  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:42:14,618  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:42:14,618  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:42:14,628  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:42:14,629  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:42:14,630  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:42:14,630  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:42:14,638  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:42:14,639  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:42:14,640  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:42:14,640  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:42:14,642  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:42:15,038  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlnt8k1p6zaqw|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlnt8k1p6zaqw|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:42:15,159  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:42:11 CST 2016]; root of context hierarchy
+10:42:56,700  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:42:56,734  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:42:56,860  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:42:57,197  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:42:57,226  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:42:57,268  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:42:57 CST 2016]; root of context hierarchy
+10:42:57,528  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:42:57,529  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:42:57,540  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:42:57,676  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:42:57,844  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:42:58,166  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:42:58,383  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:42:58,391  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:42:58,394  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:42:58,396  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:42:58,571  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:42:58,582  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:42:58,794  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:42:58,800  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:42:59,086  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:42:59,490  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:42:59,491  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:42:59,528  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlosfaaczmu8|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlosfaaczmu8|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:42:59,951  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:42:59,989  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:42:59,990  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:42:59,991  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:42:59,991  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:43:00,004  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:43:00,005  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:43:00,006  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:43:00,007  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:43:00,018  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:43:00,019  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:43:00,019  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:43:00,020  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:43:00,028  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:43:00,029  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:43:00,030  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:43:00,031  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:43:00,042  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:43:00,043  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:43:00,044  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:43:00,045  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:43:00,056  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:43:00,057  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:43:00,058  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:43:00,058  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:43:00,060  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:43:00,450  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlosfaaczmu8|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlosfaaczmu8|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:43:00,560  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:42:57 CST 2016]; root of context hierarchy
+10:43:19,811  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:43:19,845  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:43:19,976  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:43:20,315  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:43:20,346  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:43:20,391  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:43:20 CST 2016]; root of context hierarchy
+10:43:20,647  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:43:20,648  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:43:20,660  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:43:20,789  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:43:20,961  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:43:21,288  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:43:21,514  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:43:21,523  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:43:21,526  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:43:21,528  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:43:21,700  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:43:21,711  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:43:21,927  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:43:21,933  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:43:22,272  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:43:22,701  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:43:22,702  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:43:22,739  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlpa9e1q22ae8|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlpa9e1q22ae8|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:43:23,179  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:43:23,215  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:43:23,216  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:43:23,217  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:43:23,217  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:43:23,228  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:43:23,229  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:43:23,230  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:43:23,230  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:43:23,245  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:43:23,246  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:43:23,246  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:43:23,247  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:43:23,255  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:43:23,256  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:43:23,257  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:43:23,257  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:43:23,269  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:43:23,270  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:43:23,270  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:43:23,271  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:43:23,279  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:43:23,280  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:43:23,280  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:43:23,281  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:43:23,282  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:43:23,675  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlpa9e1q22ae8|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlpa9e1q22ae8|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:43:23,781  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:43:20 CST 2016]; root of context hierarchy
+10:44:17,521  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:44:17,554  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:44:17,682  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:44:18,017  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:44:18,046  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:44:18,090  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:44:18 CST 2016]; root of context hierarchy
+10:44:18,330  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:44:18,332  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:44:18,346  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:44:18,480  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:44:18,645  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:44:18,971  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:44:19,187  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:44:19,195  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:44:19,198  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:44:19,200  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:44:19,371  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:44:19,382  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:44:19,593  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:44:19,599  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:44:19,880  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:44:20,289  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:44:20,291  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:44:20,328  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlqirp1k1tu3z|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlqirp1k1tu3z|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:44:20,779  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:44:20,814  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_areas
+10:44:20,815  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [area, areaid, id, cityid]
+10:44:20,816  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:44:20,816  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:44:20,826  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_cities
+10:44:20,827  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [city, id, cityid, provinceid]
+10:44:20,827  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:44:20,828  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:44:20,841  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:44:20,841  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:44:20,842  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:44:20,843  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:44:20,854  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:44:20,855  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:44:20,855  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:44:20,856  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:44:20,867  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:44:20,868  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:44:20,869  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:44:20,870  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:44:20,879  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:44:20,880  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:44:20,881  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:44:20,882  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:44:20,891  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_provinces
+10:44:20,891  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [province, id, provinceid]
+10:44:20,892  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:44:20,893  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:44:20,902  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:44:20,903  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:44:20,904  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:44:20,904  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:44:20,914  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:44:20,915  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:44:20,916  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:44:20,917  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:44:20,919  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:44:21,329  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlqirp1k1tu3z|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlqirp1k1tu3z|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:44:21,524  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:44:18 CST 2016]; root of context hierarchy
+10:46:30,752  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:46:30,786  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:46:30,912  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:46:31,247  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:46:31,283  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:46:31,327  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:46:31 CST 2016]; root of context hierarchy
+10:46:31,562  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:46:31,563  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:46:31,576  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:46:31,709  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:46:31,877  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:46:32,195  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:46:32,413  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:46:32,421  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:46:32,424  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:46:32,427  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:46:32,601  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:46:32,613  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:46:32,827  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:46:32,833  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:46:33,116  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:46:33,545  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:46:33,546  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:46:33,584  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tltdkkwua4xl|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tltdkkwua4xl|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:46:34,036  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:46:34,072  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_areas
+10:46:34,073  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [area, areaid, id, cityid]
+10:46:34,074  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:46:34,074  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:46:34,084  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_cities
+10:46:34,085  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [city, id, cityid, provinceid]
+10:46:34,086  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:46:34,086  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:46:34,101  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:46:34,102  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:46:34,102  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:46:34,103  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:46:34,115  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:46:34,116  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:46:34,117  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:46:34,118  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:46:34,131  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:46:34,132  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:46:34,132  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:46:34,133  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:46:34,146  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:46:34,147  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:46:34,147  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:46:34,148  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:46:34,157  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_provinces
+10:46:34,159  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [province, id, provinceid]
+10:46:34,160  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:46:34,160  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:46:34,169  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:46:34,170  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:46:34,170  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:46:34,171  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:46:34,180  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:46:34,181  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:46:34,182  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:46:34,183  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:46:34,186  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:46:34,598  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tltdkkwua4xl|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tltdkkwua4xl|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:46:34,786  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:46:31 CST 2016]; root of context hierarchy
+10:47:17,533  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:47:17,566  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:47:17,690  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:47:18,020  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:47:18,055  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:47:18,120  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:47:18 CST 2016]; root of context hierarchy
+10:47:18,369  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:47:18,370  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:47:18,381  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:47:18,510  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:47:18,692  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:47:18,993  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:47:19,208  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:47:19,217  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:47:19,220  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:47:19,222  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:47:19,389  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:47:19,417  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:47:19,614  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:47:19,620  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:47:19,906  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:47:20,339  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:47:20,340  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:47:20,380  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tludoz13m4qu2|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tludoz13m4qu2|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:47:20,848  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:47:20,883  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_areas
+10:47:20,884  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [area, areaid, id, cityid]
+10:47:20,885  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:47:20,886  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:47:20,894  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_cities
+10:47:20,895  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [city, id, cityid, provinceid]
+10:47:20,896  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:47:20,897  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:47:20,910  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:47:20,911  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:47:20,912  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:47:20,912  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:47:20,922  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:47:20,923  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:47:20,924  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:47:20,925  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:47:20,937  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:47:20,938  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:47:20,939  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:47:20,939  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:47:20,952  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:47:20,952  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:47:20,953  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:47:20,954  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:47:20,963  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_provinces
+10:47:20,964  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [province, id, provinceid]
+10:47:20,964  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:47:20,965  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:47:20,973  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:47:20,974  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:47:20,974  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:47:20,975  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:47:20,983  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:47:20,984  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:47:20,984  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:47:20,985  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:47:20,986  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:47:21,369  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tludoz13m4qu2|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tludoz13m4qu2|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:47:21,557  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:47:18 CST 2016]; root of context hierarchy
+10:48:13,885  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:48:13,923  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:48:14,053  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:48:14,387  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:48:14,420  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:48:14,466  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:48:14 CST 2016]; root of context hierarchy
+10:48:14,693  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:48:14,694  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:48:14,705  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:48:14,833  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:48:15,006  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:48:15,333  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:48:15,579  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:48:15,588  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:48:15,591  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:48:15,594  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:48:15,775  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:48:15,787  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:48:15,999  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:48:16,006  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:48:16,302  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:48:16,732  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:48:16,734  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:48:16,775  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlvl5c6qga4|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlvl5c6qga4|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:48:17,225  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:48:17,261  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_areas
+10:48:17,261  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [area, areaid, id, cityid]
+10:48:17,262  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:48:17,263  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:48:17,272  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_cities
+10:48:17,272  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [city, id, cityid, provinceid]
+10:48:17,273  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:48:17,274  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:48:17,287  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:48:17,288  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:48:17,288  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:48:17,289  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:48:17,301  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:48:17,302  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:48:17,303  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:48:17,303  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:48:17,315  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:48:17,316  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:48:17,317  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:48:17,318  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:48:17,329  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:48:17,329  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:48:17,330  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:48:17,331  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:48:17,338  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_provinces
+10:48:17,339  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [province, id, provinceid]
+10:48:17,339  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:48:17,340  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:48:17,350  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:48:17,351  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:48:17,352  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:48:17,353  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:48:17,373  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:48:17,374  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:48:17,374  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:48:17,375  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:48:17,376  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:48:17,782  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlvl5c6qga4|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlvl5c6qga4|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:48:17,897  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:48:14 CST 2016]; root of context hierarchy
+10:49:02,618  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:49:02,654  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:49:02,783  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:49:03,120  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:49:03,151  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:49:03,209  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:49:03 CST 2016]; root of context hierarchy
+10:49:03,466  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:49:03,468  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:49:03,478  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:49:03,604  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:49:03,789  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:49:04,103  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:49:04,320  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:49:04,328  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:49:04,331  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:49:04,333  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:49:04,503  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:49:04,514  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:49:04,732  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:49:04,738  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:49:05,071  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:49:05,496  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:49:05,497  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:49:05,538  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlwmse1unpa5g|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlwmse1unpa5g|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:49:05,978  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:49:06,012  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_areas
+10:49:06,012  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [area, areaid, id, cityid]
+10:49:06,013  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:49:06,014  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:49:06,022  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_cities
+10:49:06,022  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [city, id, cityid, provinceid]
+10:49:06,023  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:49:06,023  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:49:06,038  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:49:06,039  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:49:06,040  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:49:06,040  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:49:06,049  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:49:06,050  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:49:06,051  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:49:06,051  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:49:06,065  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:49:06,066  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:49:06,067  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:49:06,068  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:49:06,077  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:49:06,079  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:49:06,080  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:49:06,081  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:49:06,087  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_provinces
+10:49:06,088  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [province, id, provinceid]
+10:49:06,089  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:49:06,089  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:49:06,096  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:49:06,097  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:49:06,097  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:49:06,098  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:49:06,104  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:49:06,105  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:49:06,106  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:49:06,106  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:49:06,108  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:49:06,498  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlwmse1unpa5g|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlwmse1unpa5g|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:49:06,690  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:49:03 CST 2016]; root of context hierarchy
+10:50:49,974  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:50:50,014  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@573f2bb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ae9a829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d8a00e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548b7f67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ac7a4e4]
+10:50:50,144  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+10:50:50,475  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+10:50:50,509  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [http-client.xml]
+10:50:50,553  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:50:50 CST 2016]; root of context hierarchy
+10:50:50,776  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+10:50:50,777  INFO main config.PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [httpclient.properties]
+10:50:50,787  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:50:50,896  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+10:50:51,068  INFO main log.MLog:92 - MLog clients using log4j logging.
+10:50:51,391  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:50:51,603  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:50:51,611  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+10:50:51,614  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+10:50:51,617  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+10:50:51,797  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:50:51,808  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+10:50:52,019  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10:50:52,025  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+10:50:52,302  WARN main id.UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+10:50:52,721  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+10:50:52,722  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+10:50:52,760  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlyxkbwrpk2c|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlyxkbwrpk2c|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:50:53,197  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+10:50:53,233  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_areas
+10:50:53,234  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [area, areaid, id, cityid]
+10:50:53,234  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:50:53,235  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:50:53,244  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_cities
+10:50:53,245  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [city, id, cityid, provinceid]
+10:50:53,246  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:50:53,246  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:50:53,258  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_delivery_address
+10:50:53,259  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [address, province, city, phone, user_pk, district, name, id]
+10:50:53,260  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_g0w87vosmigq5627rq64weiil]
+10:50:53,260  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_g0w87vosmigq5627rq64weiil, primary]
+10:50:53,270  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order
+10:50:53,271  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, summary, create_time, user_id, address_id, oid, pay_way, status]
+10:50:53,271  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki]
+10:50:53,272  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_c6eeowuk1aseea7i5wug2b7ac, fk_ewc825iilrep36xbvg4i2teki, primary]
+10:50:53,280  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_order_item
+10:50:53,281  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [itemid, pro_price, pro_id, num, item_summary, order_id, pro_name]
+10:50:53,282  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_8y6m4ydyam84oyjp73h8wy6j2]
+10:50:53,282  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_8y6m4ydyam84oyjp73h8wy6j2, primary]
+10:50:53,290  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_product
+10:50:53,290  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [flag, price, id, tag, product_name, register_time]
+10:50:53,291  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:50:53,291  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:50:53,300  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_provinces
+10:50:53,301  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [province, id, provinceid]
+10:50:53,302  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:50:53,303  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:50:53,312  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_user
+10:50:53,313  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [birthday, address, city, level, other_resident, tickets_total, register_time, province, phone, district, name, id, tickets_left]
+10:50:53,314  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+10:50:53,315  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:50:53,323  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: slf.slf_water
+10:50:53,323  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [msg, volume, product_id]
+10:50:53,324  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_n27isuyl5wxmik3xcsgwy5wam]
+10:50:53,325  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+10:50:53,328  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+10:50:53,721  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1699h1tlyxkbwrpk2c|3f191845, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1699h1tlyxkbwrpk2c|3f191845, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/slf?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+10:50:53,913  INFO Thread-6 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5e3a8624: startup date [Fri Jul 15 10:50:50 CST 2016]; root of context hierarchy

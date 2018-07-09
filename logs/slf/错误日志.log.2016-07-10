@@ -1,0 +1,5 @@
+14:15:14,124 ERROR main hbm2ddl.SchemaUpdate:261 - HHH000388: Unsuccessful: alter table SLF_ORDER add column msg varchar default '无'
+14:15:14,128 ERROR main hbm2ddl.SchemaUpdate:262 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'default '无'' at line 1
+14:15:14,380 ERROR main hbm2ddl.SchemaUpdate:261 - HHH000388: Unsuccessful: alter table SLF_ORDER add constraint FK_c6eeowuk1aseea7i5wug2b7ac foreign key (address_id) references SLF_DELIVERY_ADDRESS (id)
+14:15:14,381 ERROR main hbm2ddl.SchemaUpdate:262 - Cannot add or update a child row: a foreign key constraint fails (`slf`.`#sql-2948_44`, CONSTRAINT `FK_c6eeowuk1aseea7i5wug2b7ac` FOREIGN KEY (`address_id`) REFERENCES `slf_delivery_address` (`id`))
+14:15:14,712 ERROR main spi.SqlExceptionHelper:146 - Unknown column 'msg' in 'field list'

@@ -1,0 +1,1 @@
+09:47:58,457 ERROR main spi.SqlExceptionHelper:146 - Data truncation: Out of range value for column 'id' at row 1

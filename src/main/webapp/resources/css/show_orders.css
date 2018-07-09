@@ -1,0 +1,39 @@
+body{
+	 font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif；;
+    font-size: 14px;
+    line-height: 1.42857143;"
+}
+tab-pane{
+	margin-top: 10px;
+}
+.order-header{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+}
+.nav-tabs li{
+	width: 33.3%
+}
+hr{
+	height:1px;
+	border:none;
+	border-top:1px dashed #0066CC;
+}
+.wePay{
+	  color: green;
+}
+
+.ticPay{
+	 color: blue;
+}
+
+.nav-tabs>li>a{
+	text-align:center;
+}
+
+.payDone{
+	
+}
+.payNotYet{
+	
+}
